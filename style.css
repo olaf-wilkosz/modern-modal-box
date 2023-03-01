@@ -19,6 +19,7 @@ html {
 }
 
 .open-btn {
+	cursor: pointer;
 	position: relative;
 	text-decoration: none;
 	width: 25rem;
@@ -45,4 +46,83 @@ html {
 
 .open-btn:hover span:nth-child(2) {
 	opacity: 1;
+}
+
+.modal {
+	position: fixed;
+	padding: 15rem;
+	margin-inline: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0 3rem;
+}
+
+.modal::before,
+.modal::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.modal::before {
+	background-color: #333;
+}
+
+.modal::after {
+	background-color: #fff;
+}
+
+.modal-heading {
+	font-size: 4rem;
+	color: #222;
+}
+
+.modal-heading span {
+	display: block;
+}
+
+.close-btn {
+	cursor: pointer;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+
+.close-btn i {
+	font-size: 3rem;
+	color: #222;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem 1.5rem;
+}
+
+.form input {
+	width: 35rem;
+	height: 4rem;
+	border: none;
+	border-bottom: 0.1rem solid #222;
+	outline-style: none;
+	font-size: 1.7rem;
+	font-weight: 300;
+	background-color: transparent;
+	padding: 1rem;
+}
+
+.form input[type='submit'] {
+	cursor: pointer;
+	border: 0.1rem solid #222;
+	color: #222;
+	width: 20rem;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.form input[type='submit']:hover {
+	background-color: #222;
+	color: #fff;
 }
