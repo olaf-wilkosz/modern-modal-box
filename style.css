@@ -10,3 +10,39 @@
 html {
 	font-size: 62.5%;
 }
+
+.container {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: #d3d3d3;
+}
+
+.open-btn {
+	position: relative;
+	text-decoration: none;
+	width: 25rem;
+	border-bottom: 0.1rem solid #222;
+	padding-bottom: 0.5rem;
+}
+
+.open-btn span:nth-child(1) {
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: #222;
+}
+
+.open-btn span:nth-child(2) {
+	position: absolute;
+	font-size: 1.8rem;
+	bottom: -3rem;
+	left: 0;
+	width: max-content;
+	color: #777;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.open-btn:hover span:nth-child(2) {
+	opacity: 1;
+}
