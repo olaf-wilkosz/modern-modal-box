@@ -48,6 +48,14 @@ html {
 	opacity: 1;
 }
 
+.modal-bg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+}
+
 .modal {
 	position: fixed;
 	padding: 15rem;
@@ -56,6 +64,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	gap: 0 3rem;
+	visibility: hidden;
 }
 
 .modal::before,
