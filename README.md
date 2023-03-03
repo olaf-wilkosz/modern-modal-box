@@ -1,6 +1,6 @@
 # Modern modal box with HTML, CSS & JS
 
- Modern modal box with HTML, CSS & JS
+Modern modal box with HTML, CSS & JS
 
 Excercised following the tutorial **[Modal Box with HTML, CSS, and JavaScript](https://www.youtube.com/watch?v=D4sjzSPy25g)** by **[Code And Create](https://www.youtube.com/@codeandcreate)**
 
